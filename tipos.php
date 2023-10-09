@@ -1,4 +1,15 @@
 <?php
+    echo "<h1>Hola mundo</h1><br>";
+    $foo = 'Bob';
+    $bar = &$foo;
+    $bar = "Mi nombre es $bar";
+    echo $bar."<br>";
+    echo $foo."<br>";
+
+    if($bar ===  $foo){
+        echo TRUE."<br>";
+    }
+
     $un_bool = TRUE;   // un valor booleano
     $un_str  = "foo";  // una cadena de caracteres
     $un_str2 = 'foo';  // una cadena de caracteres
