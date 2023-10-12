@@ -1,4 +1,8 @@
 <?php
+    echo "<h1> Hola </h1>";
+    $foo = "pepe";
+    echo "el perrito $foo.<br>";
+    echo 'el perrito $foo.<br>';
     $un_bool = TRUE;   // un valor booleano
     $un_str  = "foo";  // una cadena de caracteres
     $un_str2 = 'foo';  // una cadena de caracteres
@@ -73,7 +77,7 @@
     echo $str."<br>";
 
     
-    $nombre = "Carlos";
+    $nombre = "Eder";
     echo <<<EOT
     Mi nombre es "$nombre".
     Esto debería mostrar una 'A' mayúscula: \x41
@@ -104,6 +108,36 @@
     echo var_dump($array)."<br>";
     echo $array[5]."<br>";
 
+    $foo = "BOB";
+    $bar = &$foo;
+    $bar = "Mi nombre es $bar";
+    echo $bar."<br>";
+    echo $foo."<br>";
 
+    echo "arreglo multidimensional"."<br>";
+    $array_3 =array(
+        "foo" => "bar",
+        42 => 24,
+        "multi"=>array(
+            "dimensional" => array(
+                "array" => "foo"
+            )
+        )
+    );
+
+    var_dump($array_3["foo"])."<br>";
+    var_dump($array_3[42])."<br>";
+    var_dump($array_3["multi"]["dimensional"])."<br>";
+    echo ""."<br>";
+    echo var_dump(100 == "1e2")."<br>";
+    echo var_dump(0 === "a")."<br>";
+
+    class foo {
+        function hacer_algo(){
+            echo "Haciendo algo";
+        }
+    }
+    $bar = new foo;
+    $bar->hacer_algo();
 
 ?>
