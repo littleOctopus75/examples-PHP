@@ -3,6 +3,8 @@
 		session_start();
 		$_SESSION["usuario"] = "YO";
 		$_SESSION["nickname"] = "yoyis";
+		$_SESSION["autorizado"] = true;
+        session_regenerate_id();
 		header("Location: main.php");
 	}else{
 
