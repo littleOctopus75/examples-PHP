@@ -11,7 +11,7 @@
         $sessionTTL = time() - $_SESSION["timeout"];
         if($sessionTTL > $inactividad){
             session_destroy();
-            header("Location: logout.php");
+            header("Location: inactividad.php");
         }
     }
     // El siguiente key se crea cuando se inicia sesión

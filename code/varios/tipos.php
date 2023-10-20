@@ -1,22 +1,10 @@
 <?php
-<<<<<<< HEAD:tipos.php
+
     echo "<h1> Hola </h1>";
     $foo = "pepe";
     echo "el perrito $foo.<br>";
     echo 'el perrito $foo.<br>';
-=======
-    echo "<h1>Hola mundo</h1><br>";
-    $foo = 'Bob';
-    $bar = &$foo;
-    $bar = "Mi nombre es $bar";
-    echo $bar."<br>";
-    echo $foo."<br>";
 
-    if($bar ===  $foo){
-        echo TRUE."<br>";
-    }
-
->>>>>>> main:code/varios/tipos.php
     $un_bool = TRUE;   // un valor booleano
     $un_str  = "foo";  // una cadena de caracteres
     $un_str2 = 'foo';  // una cadena de caracteres
