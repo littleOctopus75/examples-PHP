@@ -3,7 +3,7 @@
 		session_start();
 		$_SESSION["usuario"] = "YO";
 		$_SESSION["nickname"] = "yoyis";
-		header("Location: main.php");
+		header("Location: main_t.php");
 	}else{
 
 		header("Location: error.php");
