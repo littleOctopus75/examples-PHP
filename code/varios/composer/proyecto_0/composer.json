@@ -1,0 +1,8 @@
+{
+    "name": "composer/projecto_0",
+    "description": "Proyecto nivel 0",
+    "require": {
+        "php": ">=8.1",
+        "phpunit/php-timer": "6.0.0"
+    }
+}
