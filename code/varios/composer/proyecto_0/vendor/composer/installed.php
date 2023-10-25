@@ -3,7 +3,7 @@
         'name' => 'composer/projecto_0',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4766a0dc4afa58f38fd390fa768ba520d8aa3455',
+        'reference' => 'd22adb25c5723b31415a4024446b5d9cd45ed312',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'composer/projecto_0' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4766a0dc4afa58f38fd390fa768ba520d8aa3455',
+            'reference' => 'd22adb25c5723b31415a4024446b5d9cd45ed312',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
