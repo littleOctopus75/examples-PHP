@@ -3,8 +3,8 @@
 		session_start();
 		$_SESSION["usuario"] = "YO";
 		$_SESSION["nickname"] = "yoyis";
-		require 'includes/config.php';
-		require 'includes/functions.php';
+		require '../includes/config.php';
+		require '<div class="">../includes/functions.php';
 		init();
 	}else{
 
