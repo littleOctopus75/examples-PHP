@@ -1,5 +1,7 @@
+<a class="navbar-brand" aria-current="page" href="session/logout.php">Cerrar session</a>
 <?php
-    //require config('logout_path') . '/logout.php';
-    //header('Location: ../sessio/logout.php');
-  
+
+	session_start();
+	session_destroy();
+	header("Location: ../index.php");
 ?>

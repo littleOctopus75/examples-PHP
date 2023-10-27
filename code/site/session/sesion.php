@@ -3,9 +3,7 @@
 		session_start();
 		$_SESSION["usuario"] = "Euclides";
 		$_SESSION["nickname"] = "littleoctopus";
-		require '../includes/config.php';
-		require '../includes/functions.php';
-		init();
+		header("Location: ../index.php");
 	}else{
 
 		header("Location: error.php");

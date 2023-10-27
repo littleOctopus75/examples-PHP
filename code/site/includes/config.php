@@ -9,7 +9,7 @@ function config($key = '')
 {
     $config = [
         'name' => 'Hola Mundo 🌐',
-        'site_url' => 'http://localhost/Practicas%20PHP/Examples-PHP/code/site/',
+        'site_url' => 'http://localhost/PracticasPHP/Examples-PHP/code/site/',
 
         'pretty_uri' => false,
         'nav_menu' => [
@@ -20,9 +20,9 @@ function config($key = '')
             'student' => 'Student',
             'salir' => 'Salir',
         ],
-        'template_path' => '../template',
-        'content_path' => '../content',
-        'logout_path' => '../session',
+        'template_path' => 'template',
+        'content_path' => 'content',
+        'logout_path' => 'session',
         'version' => 'v3.1',
     ];
     $configSubMenu=[
