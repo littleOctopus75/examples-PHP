@@ -80,3 +80,8 @@ function init()
 {
     require config('template_path') . '/template.php';
 }
+
+function sesion()
+{
+    header("Location: session/login.php");   
+}

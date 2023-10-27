@@ -8,13 +8,9 @@
 function config($key = '')
 {
     $config = [
-<<<<<<< HEAD
         'name' => 'Hola Mundo 🌐',
         'site_url' => 'http://localhost/Practicas%20PHP/Examples-PHP/code/site/',
-=======
-        'name' => 'Simple PHP Website',
-        'site_url' => 'http://localhost:32769/examples-PHP/code/site/',
->>>>>>> 406fa26df75d9cc3d6eee013f935cdca32299dd4
+
         'pretty_uri' => false,
         'nav_menu' => [
             '' => 'Home',
