@@ -18,9 +18,11 @@ function config($key = '')
             'products' => 'Products',
             'contact' => 'Contact',
             'student' => 'Student',
+            'salir' => 'Salir',
         ],
-        'template_path' => 'template',
-        'content_path' => 'content',
+        'template_path' => '../template',
+        'content_path' => '../content',
+        'logout_path' => '../session',
         'version' => 'v3.1',
     ];
     $configSubMenu=[

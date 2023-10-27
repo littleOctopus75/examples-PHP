@@ -1,10 +1,10 @@
 <?php
-	if($_POST['user']=="yoyis" && $_POST['pass']=="1234"){
+	if($_POST['user']=="littleoctopus" && $_POST['pass']=="contraseña"){
 		session_start();
-		$_SESSION["usuario"] = "YO";
-		$_SESSION["nickname"] = "yoyis";
+		$_SESSION["usuario"] = "Euclides";
+		$_SESSION["nickname"] = "littleoctopus";
 		require '../includes/config.php';
-		require '<div class="">../includes/functions.php';
+		require '../includes/functions.php';
 		init();
 	}else{
 
