@@ -20,10 +20,10 @@ DROP TABLE IF EXISTS employees;
 
 CREATE TABLE employees (
     emp_no      INT             NOT NULL,
-    birth_date  TIMESTAMP       NOT NULL,
+    birth_date  DATETIME       NOT NULL,
     first_name  VARCHAR(14)     NOT NULL,
     last_name   VARCHAR(16)     NOT NULL,
-    hire_date   TIMESTAMP       NOT NULL,
+    hire_date   DATETIME       NOT NULL,
     PRIMARY KEY (emp_no)
 );
 
@@ -35,20 +35,20 @@ CREATE TABLE departments (
 );
 
 CREATE TABLE dept_manager (
-   dept_no      CHAR(4)         NOT NULL,
-   emp_no       INT             NOT NULL,
-   from_date    TIMESTAMP       NOT NULL,
-   to_date      TIMESTAMP       ,
-   FOREIGN KEY (emp_no)  REFERENCES employees (emp_no)    ON DELETE CASCADE,
-   FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
-   PRIMARY KEY (emp_no,from_date,dept_no)
+    dept_no      CHAR(4)         NOT NULL,
+    emp_no       INT             NOT NULL,
+    from_date    DATETIME       NOT NULL,
+    to_date      DATETIME       ,
+    FOREIGN KEY (emp_no)  REFERENCES employees (emp_no)    ON DELETE CASCADE,
+    FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
+    PRIMARY KEY (emp_no,from_date,dept_no)
 ); 
 
 CREATE TABLE works_in (
     emp_no      INT             NOT NULL,
     dept_no     CHAR(4)         NOT NULL,
-    from_date   TIMESTAMP       NOT NULL,
-    to_date TIMESTAMP,
+    from_date   DATETIME       NOT NULL,
+    to_date DATETIME,
     FOREIGN KEY (emp_no)  REFERENCES employees   (emp_no)  ON DELETE CASCADE,
     FOREIGN KEY (dept_no) REFERENCES departments (dept_no) ON DELETE CASCADE,
     PRIMARY KEY (emp_no,from_date,dept_no)
@@ -57,7 +57,7 @@ CREATE TABLE works_in (
 CREATE TABLE titles (
     emp_no      INT             NOT NULL,
     title       VARCHAR(50)     NOT NULL,
-    from_date   TIMESTAMP       NOT NULL,
+    from_date   DATETIME       NOT NULL,
     FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
     PRIMARY KEY (emp_no,title, from_date)
 ); 
@@ -66,7 +66,7 @@ CREATE TABLE titles (
 CREATE TABLE salaries (
     emp_no      INT             NOT NULL,
     salary      INT             NOT NULL,
-    from_date   TIMESTAMP       NOT NULL,
+    from_date   DATETIME       NOT NULL,
     FOREIGN KEY (emp_no) REFERENCES employees (emp_no) ON DELETE CASCADE,
     PRIMARY KEY (emp_no, from_date)
 );
@@ -1175,3 +1175,13 @@ INSERT INTO works_in VALUES (54422, '0012', '2018-11-4', null);
 INSERT INTO titles VALUES ( '54420', 'Tech Lev 2', '2018-11-21');
 UPDATE works_in SET to_date = '2019-1-17' WHERE emp_no = 54334 AND from_date = '2012-1-25';
 INSERT INTO works_in VALUES (54334, '0009', '2019-1-17', null);
+
+
+-- Add two columns
+-- email and password
+
+ALTER TABLE employees ADD email VARCHAR(255);
+UPDATE employees SET email=CONCAT(first_name,'@gmail.com');
+
+ALTER TABLE employees ADD pass VARCHAR(40);
+UPDATE employees SET pass=SHA1('1234');
