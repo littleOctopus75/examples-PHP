@@ -34,9 +34,3 @@ function config($key = '')
 
     return isset($config[$key]) ? $config[$key] : null;
 }
-/*[
-                'name'=> 'Name',
-                'group' => 'Group',
-                'degree' => 'Degree',
-                'school' => 'School'
-            ],*/
