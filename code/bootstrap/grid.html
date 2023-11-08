@@ -12,14 +12,14 @@
         .row{            
             border: solid green;
         }
-        .col{
+        .col, .columna{
             background-color: yellow;
             border: solid blue;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container text-center">
         <div class="row">
             <div class="col"> 1-1 </div>
             <div class="col"> 1-2 </div>
@@ -30,6 +30,35 @@
             <div class="col"> 2-3 </div>
         </div>
     </div>
+
+    <hr><hr><hr>
+    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4 columna"> 1-1 </div>
+            <div class="col-sm-8 columna"> 1-2 </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 columna"> 2-1 </div>
+            <div class="col-sm-8 columna"> 2-2 </div>
+            <div class="col-sm-2 columna"> 2-3 </div>
+        </div>
+    </div>
+
+    <hr><hr><hr>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4 col-lg-6 columna"> 1-1 </div>
+            <div class="col-sm-8 col-lg-6 columna"> 1-2 </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-lg-10 columna"> 2-1 </div>
+            <div class="col-sm-8 col-lg-1 columna"> 2-2 </div>
+            <div class="col-sm-2 col-lg-1 columna"> 2-3 </div>
+        </div>
+    </div>
+
     <script src="./js/bootstrap.min.js"></script>    
 </body>
 </html>
