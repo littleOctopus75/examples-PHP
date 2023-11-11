@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Vista Presentador</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- Vista -->
+        <h1 id="display">¡Hola Mundo!</h1>
+        <button id="changeButton">Cambiar Mensaje</button>
+    </div>
+
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <script src="presentador.js"></script>
+
+    <script>
+        // Inicialización
+        var modelo = new Modelo();
+        var vista = new Vista();
+        var presentador = new Presentador(modelo, vista);
+    </script>
+
+</body>
+</html>
