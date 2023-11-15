@@ -1,9 +1,10 @@
 <?php
-	if($_POST['user']=="yoyis" && $_POST['pass']=="1234"){
+	if($_POST['user']=="jennpper" && $_POST['pass']=="1234"){
 		session_start();
 		$_SESSION["usuario"] = "YO";
-		$_SESSION["nickname"] = "yoyis";
-		header("Location: main_t.php");
+		$_SESSION["nombre"] = "Jenn Cortes";
+		$_SESSION["carrera"] = "Informatica";
+		header("Location: ..//index.php");
 	}else{
 
 		header("Location: error.php");
