@@ -192,6 +192,74 @@ h1 {
     border: #6C63FF;
 }
 
+.tips {
+    min-height: 500px;
+    padding: 30px;
+}
+
+.tips .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.tips .card-header {
+    font-weight: bold;
+}
+
+.recomendaciones {
+    padding: 40px 40px 80px 40px;
+}
+
+.recomendaciones .carousel {
+    max-width: 800px;
+    color:#6C63FF
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recomendacion-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.recomendacion-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    color: #3F3D56;
+}
+
+.recomendacion-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.recomendacion-info p {
+    margin-bottom: 0;
+}
+
+.recomendacion-info .amigo {
+    color: #2F2E41;
+    font-size: 1.2rem;
+}
+
+.recomendacion-info .cargo {
+    color: #3F3D56;
+    font-size: 0.9rem;
+}
 
 /* Responsive */
 
@@ -204,6 +272,12 @@ h1 {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .myclass-imagen {
+        max-width: 600px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
@@ -211,8 +285,12 @@ h1 {
     
 }
 
-@media screen and (max-width: 700px) {
-    .myclass-imagen {
-        max-width: 600px;
+@media screen and (max-width: 800px) {
+    .recomendacion-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .recomendacion-texto {
+        font-size: 18px;
     }
 }
